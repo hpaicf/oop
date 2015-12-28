@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* 
+---------------------------------
+Site: site global_head.css  
+Author:  chenfeng
+Last Changed by : chenfeng
+Last Update : 2015-12-01 16:15
+--------------------------------- 
+*/
+/*求购求售列表页面*/
+.main_center{margin: 0 auto;width: 100%;position: relative;}
+.comWidth{width: 1000px;margin:0 auto;}
+/*轮播*/
+.slide{width: 100%;height:500px;background:#e6e6e6;margin-bottom: 30px;}
+.slide img{ border: 0;width: 1000px;height: 500px;}
+.ck-slide{width: 100%;height: 100%;}
+.ck-slide ul { margin: 0; padding: 0; list-style-type: none;}
+.ck-slide { position: relative; overflow: hidden;}
+.ck-slide ul.ck-slide-wrapper { position: absolute; top: 0; left: 0; z-index: 1; margin: 0; padding: 0;height: 100%;}
+.ck-slide ul.ck-slide-wrapper li { position: absolute;width:100%;}
+.ck-slide .ck-prev, .ck-slide .ck-next { position: absolute; top: 50%; z-index: 2; width: 35px; height: 70px; margin-top: -35px; border-radius: 3px; opacity: .15; background: red; text-indent: -9999px; background-repeat: no-repeat; transition: opacity .2s linear 0s;}
+.ck-slide .ck-prev { left: 5px; background: url(../images/arrow-left.png) #000 50% no-repeat;}
+.ck-slide .ck-next { right: 5px; background: url(../images/arrow-right.png) #000 50% no-repeat;}
+.ck-slidebox { position: absolute; left: 50%; bottom: 12px; z-index: 10;}
+.ck-slidebox ul { height: 20px; padding: 0 4px; border-radius: 8px; }
+.ck-slidebox ul li { float: left; height: 12px; margin: 9px 10px;}
+.ck-slidebox ul li em { display: block; width: 15px; height: 15px; border-radius: 50%; background-color:rgba(249,209,210,0.8); text-indent: -9999px; cursor: pointer;}
+.ck-slidebox ul li.current em,.ck-slidebox ul li em:hover { background-color: rgba(237,99,92,0.8);}
+/*主体*/
+/*切换按钮*/
+.change{width: 100%;}
+.change .Btncontent a{width:100px;height: 38px;line-height: 38px;border-radius: 18px;float: left;margin-left: 30px;border: 1px solid #ef4239;color: #ef4239;letter-spacing: 2px;font-size: 14px;}
+.Btncontent a.thischange,.Btncontent a:hover{background:#ef4239;color: #fff;}
+.change .Btncontent{margin: 0 auto;width: 300px;height: 40px;}
+.main_center .main_content{width: 100%;}
+.main_content .classify{width: 100%;height:100px;margin:20px 0;border-top: 1px solid #fbd0cd;}
+.main_content .classify .classifydiv{width: 100%;height:30px;border-bottom:1px solid #fbd0cd; background: #fff;}
+.main_content .classify .classifydiv .classtitle{width:120px;height: 100%;background:#fdeceb;text-align: center;line-height:30px;color: #646464;font-size: 14px;float: left; }
+.main_content .classify .classifydiv ul{width: 800px;float: left;height: 100%;}
+.main_content .classify .classifydiv ul li{margin-left:25px;float: left;}
+.main_content .classify .classifydiv ul li a{color:#787878; line-height: 30px;font-size: 13px;}
+.main_content .classify .classifydiv ul li a:hover,.main_content .classify .classifydiv ul li a.this{color: #ef4239;}
+/*每个项目的样式*/
+.list_content{width:960px;min-height: 1000px;padding:20px;}
+.list_item{padding: 9px;width:222px;height: 352px;border: 2px solid #e6e6e6;float: left;margin-right:24px; margin-bottom: 20px;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.list_item .item_content{width:200px;height: 330px;}
+.item_content .item_img{width: 100%;height: 200px;position: relative;overflow: hidden;}
+.item_content .item_img img{width:200px;height: 200px;}
+.item_decrip{width:190px;height:80px;position: absolute;bottom:-100px;left: 0px;background:#000;opacity: 0.5;filter:alpha(opacity=50);color:#fff;overflow: hidden;letter-spacing: 1px;line-height: 19px;padding: 5px;}
+.more_img{width: 100%;height: 32px;margin-top: 10px;}
+.more_img li{width:26px;height:26px;border: 2px solid #d2d2d2; margin-left:10px;float: left; }
+.more_img li a img{width: 26px;height: 26px;}
+.place{width: 100%;height:23px;margin-top:7px;margin-bottom: 8px;}
+.place a{line-height: 23px;margin-left: 20px;color: #ef4239;font-size: 16px;width: auto;float: left;}
+.place a#province{margin-left: 0;}
+.more_img li.firstmoreimg{margin-left: 0;}
+.more_img li:hover,.more_img li.thismoreimg{border: 2px solid #ef4239;}
+a.sellname{width: 100%;color:#a0a0a0;text-align: left;height: 20px;}
+.price{width: 190px;height:28px;background: #fdeceb;color: #ef4239;font-size: 18px;line-height: 28px;padding-left: 10px;margin-top: 3px;}
+.list_item:hover{border: 2px solid #ef4239;}
+/*分页*/
+.page{
+	display: none;
+	margin-top: 60px;
+	width: 100%;
+	height: 20px;
+}
+.page_content{
+	width: 390px;
+	margin: 0 auto;
+}
+.page_content .pagination{
+	width: 600px;
+	height: 100%;
+	zoom:1; _display:inline;
+	display: inline-block;
+}
+.page_content .page_info{
+	font-size: 14px;
+	zoom:1; _display:inline;
+	display: inline-block;
+	height: 26px;
+	text-align:center;
+}
+.page_content .pagination a,.page_content .pagination span{
+	height: 20px;
+	display: inline-block;
+	width:30px;
+	text-align: center;
+	float: left;
+	line-height: 20px;
+	color:white;
+	background:#fafafa; 
+	border: 1px solid #c8c8c8;
+	color: #646464;
+}
+.page_content .pagination a,.page_content .pagination span{
+	margin-left:10px; 
+}
+.page_content .pagination a:hover,.page_content .pagination span.current{
+	background: #fdeceb;  
+	color: #ef4239;
+	border: 1px solid #ef4239;
+}
+.page_content .pagination a.next,.page_content .pagination a.prev{
+	width:50px;
+}
+.page_content .pagination span.next,.page_content .pagination span.prev{
+	width:50px;
+}
+#missionDiv{display: none;}
+/*右侧栏样式改变*/
+.right_fixed{height: 145px;}
+.right .right_content{height: 55px;}
+.right .uhead{height: 55px;}
+.right .right_content{padding-top: 30px;}
+.head_bottom .nav #this_nav{left: 150px;}
